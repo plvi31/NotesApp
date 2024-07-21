@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".editNotesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofEditNote"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1E1E1E"
+        android:elevation="4dp" />
+
+    <EditText
+        android:id="@+id/edittitleofnote"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbarofEditNote"
+        android:background="#1E1E1E"
+        android:hint="Enter note's title here."
+        android:paddingLeft="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="12dp" />
+
+    <EditText
+        android:id="@+id/editcontentofnote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edittitleofnote"
+        android:background="#1E1E1E"
+        android:gravity="top|left"
+        android:hint="Enter your content here"
+        android:paddingLeft="20dp"
+
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:padding="15dp" />
+
+
+    <ImageView
+        android:id="@+id/saveEditNote"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/save_2"
+        app:maxImageSize="40dp" />
+
+</RelativeLayout>

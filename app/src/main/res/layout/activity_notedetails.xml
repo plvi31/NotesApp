@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".notedetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofnoteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1E1E1E"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        app:title="Your Note">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/titleofnotedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarofnoteDetail"
+        android:paddingTop="12dp"
+        android:background="#1E1E1E"
+        android:paddingLeft="15dp"
+        android:textSize="25sp"
+
+        android:textColor="#FFFFFF"
+        android:text="Title displayed here" />
+
+    <TextView
+        android:id="@+id/contentofnoteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleofnotedetail"
+        android:background="#1E1E1E"
+        android:gravity="top|left"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:text="Sample content text" />
+
+    <ImageView
+        android:id="@+id/gotoeditnote"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/edit"
+        app:maxImageSize="40dp" />
+
+</RelativeLayout>
